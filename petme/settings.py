@@ -90,8 +90,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'petme_db',
-        'USER': 'your_db_user',
-        'PASSWORD': 'your_db_password',
+        'USER': 'ashu',
+        'PASSWORD': 'ashu',
         'HOST': 'localhost',
         'PORT': '5432',
     }
