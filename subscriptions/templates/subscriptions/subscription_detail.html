@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Subscription Detail</title>
+</head>
+<body>
+    <h1>Subscription Detail</h1>
+    <p>Name: {{ subscription.name }}</p>
+    <p>Price: {{ subscription.price }}</p>
+    <p>Duration: {{ subscription.duration }}</p>
+    <a href="{% url 'subscription_list' %}">Back to Subscription List</a>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emergency Detail</title>
+</head>
+<body>
+    <h1>Emergency Detail</h1>
+    <p>Description: {{ emergency.description }}</p>
+    <p>Location: {{ emergency.location }}</p>
+    <a href="{% url 'emergency_list' %}">Back to Emergency List</a>
+</body>
+</html>

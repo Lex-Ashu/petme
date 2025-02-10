@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forum Detail</title>
+</head>
+<body>
+    <h1>Forum Detail</h1>
+    <p>Title: {{ forum.title }}</p>
+    <p>Description: {{ forum.description }}</p>
+    <a href="{% url 'forum_list' %}">Back to Forum List</a>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Notification</title>
+</head>
+<body>
+    <h1>Add Notification</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea><br>
+        <button type="submit">Add</button>
+    </form>
+    <a href="{% url 'notification_list' %}">Back to Notification List</a>
+</body>
+</html>

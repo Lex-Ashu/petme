@@ -1,0 +1,6 @@
+Django>=4.0
+djangorestframework>=3.12
+django-crispy-forms>=1.9
+Pillow>=8.0
+django-allauth>=0.44
+psycopg2>=2.8

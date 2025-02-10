@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Emergency</title>
+</head>
+<body>
+    <h1>Add Emergency</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="description">Description:</label>
+        <input type="text" id="description" name="description"><br>
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location"><br>
+        <button type="submit">Add</button>
+    </form>
+    <a href="{% url 'emergency_list' %}">Back to Emergency List</a>
+</body>
+</html>

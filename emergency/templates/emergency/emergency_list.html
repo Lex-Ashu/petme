@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emergency List</title>
+</head>
+<body>
+    <h1>Emergency List</h1>
+    <ul>
+    {% for emergency in emergencies %}
+        <li><a href="{% url 'emergency_detail' emergency.id %}">{{ emergency.description }} - {{ emergency.location }}</a></li>
+    {% endfor %}
+    </ul>
+    <a href="{% url 'add_emergency' %}">Add Emergency</a>
+</body>
+</html>

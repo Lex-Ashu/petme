@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Subscription List</title>
+</head>
+<body>
+    <h1>Subscription List</h1>
+    <ul>
+    {% for subscription in subscriptions %}
+        <li><a href="{% url 'subscription_detail' subscription.id %}">{{ subscription.name }}</a></li>
+    {% endfor %}
+    </ul>
+    <a href="{% url 'add_subscription' %}">Add Subscription</a>
+</body>
+</html>
