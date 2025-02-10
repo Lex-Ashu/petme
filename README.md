@@ -7,11 +7,13 @@ Welcome to the PetMe Project! This project is a Django-based web application for
 ### 1. Clone the Repository
 
 git clone https://github.com/Lex-Ashu/petme.git
+
 cd petme
 
 ### 2. Create a Virtual Environment
 
 python -m venv venv
+
 source venv/bin/activate 
 
 ### 3. Install Dependencies
@@ -23,6 +25,7 @@ pip install -r requirements.txt
 #### On macOS using Homebrew:
 
 brew install postgresql
+
 brew services start postgresql
 
 
