@@ -25,13 +25,17 @@ def signup_view(request):
     return render(request, 'accounts/signup.html')
 
 def otp_view(request):
-    #OTP verification logic here
+    # Implement OTP verification logic here
     return render(request, 'accounts/otp.html')
 
 def password_reset_view(request):
     if request.method == 'POST':
         email = request.POST['email']
-        #password reset logic here
+        # Implement password reset logic here
         messages.success(request, 'Password reset link sent to your email')
         return redirect('login')
     return render(request, 'accounts/password_reset.html')
+
+def logout_view(request):
+    logout(request)
+    return redirect('login')
