@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Sign Up</title>
+    <title>Login</title>
 </head>
 <body>
-    <h2>Sign Up</h2>
+    <h2>Login</h2>
     <form method="POST">
         {% csrf_token %}
         <label for="username">Username:</label>
         <input type="text" name="username" required><br>
-        <label for="email">Email:</label>
-        <input type="email" name="email" required><br>
         <label for="password">Password:</label>
         <input type="password" name="password" required><br>
-        <button type="submit">Sign Up</button>
+        <button type="submit">Login</button>
     </form>
-    <a href="{% url 'login' %}">Login</a>
+    <a href="{% url 'signup' %}">Sign up</a><br>
+    <a href="{% url 'password_reset' %}">Forgot password?</a>
 </body>
 </html>
