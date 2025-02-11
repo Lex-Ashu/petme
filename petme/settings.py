@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'reviews',         # Your reviews app
     'subscriptions',   # Your subscriptions app
     'users',           # Your users app
+    'accounts',
 ]
 
 MIDDLEWARE = [
